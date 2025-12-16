@@ -192,10 +192,12 @@ const exercise4Array = ["red", "blue", "green", "yellow", "purple"];
 
 // Your solution here (one-line arrow function):
 // const exercise4Result1 = 
-const exercise4Result1 = exercise4Array.filter(word)
+const exercise4Result1 = exercise4Array.filter(exercise4Array => exercise4Array.startswith('b'));
 // Your solution here (regular arrow function):
 // const exercise4Result2 = 
-
+const exercise4Result2 = exercise4Array.filter((exercise4Array) => {
+  return exercise4Array.startswith('b');
+});
 // Uncomment to test:
 // console.log("Exercise 4 - One-line:", exercise4Result1);
 // console.log("Exercise 4 - Regular:", exercise4Result2);
