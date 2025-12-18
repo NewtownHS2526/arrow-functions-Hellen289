@@ -71,10 +71,12 @@ const exercise2Array = [
 
 // Your solution here (one-line arrow function):
 // const exercise2Result1 = 
-
+const exercise2Result1 = exercise2Array.filter(person => person.city === "New York");
 // Your solution here (regular arrow function):
 // const exercise2Result2 = 
-
+const exercise2Result2 = exercise2Array.filter((person) => {
+  return person.city === "New York";
+});
 // Uncomment to test:
 // console.log("Exercise 2 - One-line:", exercise2Result1);
 // console.log("Exercise 2 - Regular:", exercise2Result2);
